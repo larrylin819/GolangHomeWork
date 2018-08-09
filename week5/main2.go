@@ -14,7 +14,7 @@ func main() {
 	go func() {
 		for i := 1; i <= 20; i++ {
 			total = total * i
-			fmt.Printf("%d!: %d\n", i, total)
+			//fmt.Printf("%d!: %d\n", i, total)
 			ch <- total
 		}
 	}()
